@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prediction</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div
+      class="scroll-btn btn main-btn position-fixed rounded-circle w-auto text-light m-3 fs-4"
+    >
+      Up
+    </div>
+    <!--Header section start-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">Heart Disease System</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="prediciton.html">prediction</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Header Section End -->
+    <!-- prediciton landing start-->
+    <div class="landing-predection">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 landing-content mt-5">
+            <div class="text">
+              <p><span>Test</span> And <span>Train</span> our Model</p>
+              <p>Check Your Labs By Using Our Model</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- prediction landing end-->
+    <!--form section start-->
+    <div class="form-section p-5" data-aos="zoom-in">
+      <div class="container">
+        <div class="header-section">
+          <h2>Prediction</h2>
+        </div>
+        <form method="post" class="d-flex flex-column p-5">
+          <input type="text" placeholder="Your Age" class="mb-4 w-25" />
+          <div class="gender mb-4">
+            <input type="checkbox" name="female" id="female" />
+            <label for="female">Female</label>
+            <input type="checkbox" name="male" id="male" />
+            <label for="female">Male</label>
+          </div>
+          <div class="chest-pain mb-4 d-flex flex-column">
+            <label for="chest" class="mb-2">chest pain type</label>
+            <div class="val-1 mb-2">
+              <input type="radio" name="normal" id="normal" />
+              <label for="normal">1</label>
+            </div>
+            <div class="val-2 mb-2">
+              <input type="radio" name="fixed" id="fixed" />
+              <label for="fixed">2</label>
+            </div>
+            <div class="val-3 mb-2">
+              <input type="radio" name="reversable" id="reversable" />
+              <label for="reversable">3</label>
+            </div>
+            <div class="val-4">
+              <input type="radio" name="reversable" id="reversable" />
+              <label for="reversable">4</label>
+            </div>
+          </div>
+          <input
+            type="text"
+            placeholder="blood pressure"
+            class="mb-4 w-25"
+          />
+          <input
+            type="text"
+            placeholder="serum cholestoral"
+            class="mb-4 w-25"
+          />
+          <input
+            type="text"
+            placeholder="blood sugar"
+            class="mb-4 w-25"
+          />
+          <div class="results mb-4 d-flex flex-column">
+            <label for="results" class="mb-2"
+              >resting electrocardiographic results
+            </label>
+            <div class="val-1 mb-2">
+              <input type="radio" name="normal" id="normal" />
+              <label for="normal">1</label>
+            </div>
+            <div class="val-2 mb-2">
+              <input type="radio" name="fixed" id="fixed" />
+              <label for="fixed">2</label>
+            </div>
+            <div class="val-3">
+              <input type="radio" name="reversable" id="reversable" />
+              <label for="reversable">3</label>
+            </div>
+          </div>
+          <input
+            type="text"
+            placeholder="heart rate achieved"
+            class="mb-4 w-25"
+          />
+          <input
+            type="text"
+            placeholder="exercise induced angina"
+            class="mb-4 w-25 angina"
+          />
+          <input type="text" placeholder="oldpeak" class="mb-4 w-25" />
+          <input
+            type="text"
+            placeholder="slope of peak exercise"
+            class="mb-4 w-25 slope"
+          />
+          <div class="number mb-4 d-flex flex-column">
+            <label for="" class="mb-2">number of major vessels</label>
+            <div class="val-1 mb-2">
+              <input type="radio" name="normal" id="normal" />
+              <label for="normal">0 - Normal</label>
+            </div>
+            <div class="val-2 mb-2">
+              <input type="radio" name="fixed" id="fixed" />
+              <label for="fixed">1 - Fixed defect</label>
+            </div>
+            <div class="val-3">
+              <input type="radio" name="reversable" id="reversable" />
+              <label for="reversable">2- reversable defect</label>
+            </div>
+          </div>
+          <input
+            type="submit"
+            value="Submit"
+            class="btn btn-main text-light fs-6 fw-bold"
+          />
+        </form>
+      </div>
+    </div>
+    <!--form section end-->
+    <!--footer start-->
+    <div class="footer text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            Quick Links:
+          </div>
+          <div class="col-12">
+            <ul class="links d-flex justify-content-center list-unstyled mt-3">
+              <li class="me-3">
+                <a href="index.html" class="text-decoration-none text-light">Home</a>
+              </li>
+              <li class="me-3">
+                <a href="index.html" class="text-decoration-none text-light">About</a>
+              </li>
+              <li class="me-3">
+                <a href="index.html" class="text-decoration-none text-light">Services</a>
+              </li>
+              <li>
+                <a href="prediciton.html" class="text-decoration-none text-light">prediction</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12">
+            all right reserved &copy;
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--footer end-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="main.js"></script>
+  </body>
+</html>

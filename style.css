@@ -1,0 +1,317 @@
+:root {
+  --bs-danger: #dc3545;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.scroll-btn {
+  z-index: 9999;
+  right: 0;
+  bottom: 0;
+  background-color: var(--bs-danger);
+  display: none;
+
+}
+
+.scroll-btn.show {
+  display: block;
+}
+
+.header-section {
+  padding: 50px 0;
+  text-align: center;
+  color: var(--bs-danger);
+}
+
+.header-section h2 {
+  font-weight: bold;
+  margin: auto;
+}
+
+/*header start*/
+.navbar {
+  background-color: transparent !important;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+
+.navbar-brand {
+  color: var(--bs-danger) !important;
+  font-weight: bold;
+}
+
+#navbarNav {
+  justify-content: flex-end;
+}
+
+.navbar-nav li {
+  margin-left: 20px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.navbar-nav li a {
+  color: white !important;
+}
+
+.navbar-nav li:hover a {
+  color: var(--bs-danger) !important;
+}
+
+.nav-item .active {
+  color: var(--bs-danger) !important;
+}
+
+.navbar-toggler {
+  color: white !important;
+}
+
+.navbar-toggler i {
+  color: white !important;
+}
+
+/*header end*/
+/*landing start*/
+.landing {
+  position: relative;
+  min-height: 100vh;
+  background-image: url("imgs/landing-back.jpg");
+  background-size: cover;
+}
+
+.landing .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000087;
+}
+
+.landing-content {
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.landing .text {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .landing .text {
+    margin-top: 35px;
+    font-size: 27px;
+  }
+}
+
+.landing .text span {
+  color: var(--bs-danger);
+}
+
+.landing button {
+  border: none;
+  color: white;
+  background-color: var(--bs-danger);
+  padding: 5px 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.landing button a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+/*landing end*/
+/*about us start*/
+.about-us p {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .about-us p {
+    text-align: center;
+  }
+}
+
+/*about us end*/
+
+/*start services*/
+.services {
+  background-color: #eee;
+}
+
+.services .service-content {
+  margin: 30px 0;
+}
+
+.services .service-content i {
+  color: var(--bs-danger);
+}
+
+.services .service-content p {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/*end srvices*/
+/*footer start*/
+.footer {
+  padding: 20px 0;
+  background-color: #333;
+  color: #fff;
+  font-size: 18px;
+}
+
+/*footer end*/
+
+/*************************Prediction page***************************/
+/*landing start*/
+.landing-predection {
+  position: relative;
+  min-height: 60vh;
+  background-image: url("imgs/prediction.jpeg");
+  background-size: cover;
+
+}
+
+
+.landing-predection .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000b9;
+}
+
+.landing-predection .text {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+
+  .landing-predection .text {
+    margin-top: 35px;
+    font-size: 27px;
+  }
+}
+
+.landing-predection .text span {
+  color: var(--bs-danger);
+}
+
+/*landing end*/
+/*form start*/
+form {
+  background-color: #eee;
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.form-section form input[type="text"] {
+  border: none;
+  padding: 10px;
+  outline: none;
+  border-radius: 5px;
+  color: var(--bs-danger);
+
+}
+
+.form-section form label {
+  font-weight: bold;
+  color: var(--bs-danger);
+
+}
+
+.form-section form input[type="text"]::placeholder {
+  font-size: 14px;
+
+
+
+}
+
+.form-section form input[type="text"]:focus::placeholder {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.form-section form input[type="submit"] {
+  background-color: var(--bs-danger);
+  width: fit-content;
+  transition: 0.3s;
+}
+
+.form-section form input[type="submit"]:hover {
+  background-color: #fff;
+  color: var(--bs-danger) !important;
+}
+
+.form-section form .chest-pain,
+.form-section form .results {
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 5px;
+
+
+
+}
+
+.form-section form .chest-pain label,
+.form-section form .results label {
+  font-size: 18px;
+}
+
+.form-section form .chest-pain input,
+.form-section form .results input {
+  border-bottom: 1px solid #eee;
+}
+
+@media (max-width: 1200px) {
+  .form-section form input[type="text"] {
+    width: 100% !important;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .form-section form input[type="text"]::placeholder {
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  .form-section label {
+    font-size: 13px;
+  }
+
+  .form-section form .chest-pain label,
+  .form-section form .results label {
+    font-size: 12px;
+  }
+
+
+}
+
+/*form end*/
+/****************************** Trainig Page **************************/
+.landing-trainig {
+  position: relative;
+  min-height: 120vh;
+ background-image: url("imgs/trainig.jpg");
+  background-size: cover;
+}
